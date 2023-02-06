@@ -1,0 +1,172 @@
+
+
+#Kullanıcı iki adet fiyat girecek. 
+#Büyük girdiği fiyata %25 indirim uygulanıp toplanacak 
+#Aksi halde iki fiyatta toplanacak
+
+m1 = int(input("Fiyat Giriniz: "))
+m2 = int(input("Fiyat Giriniz: "))
+
+if m1>m2:
+    print(m1*0.75 + m2)
+elif m2>m1:
+    print(m2*0.75 + m1)
+else:
+    print(m1+m2)
+
+###################################################################
+
+# Eğer kulanıcının yaşı 45'in altındaysa;
+# Çocuk sayısına bakılacak. Ve çocuk sayısı 3 ve 3'ten az ise çocuk başına 250₺ çok ise
+# çocuk başına 200₺
+# maaşa ekleme yapılacak.(Temel Maaş= 3000₺)
+# 45 ve 45'in üzerinde ise çocuk başına para verilmeyecek ancak 500₺ ekleme yapılacak.
+# Son olarak ekrana : "Nesrin Yılmaz, Maaşınız: 4000₺" yazılacak.
+
+
+isim = input("Ad: ")
+soyad = input("Soyad: ")
+maas = 3000
+yas = int(input("Yaş Giriniz: "))
+cocuk = int(input("Çocuk Sayısı Giriniz"))
+
+if yas >= 45:
+    maas = maas+500
+    maas = str(maas)
+    print(isim,",",soyad,",",maas+" tl")
+elif cocuk <= 3:
+    maas = maas + cocuk * 250
+    maas = str(maas)
+    print(isim, ",", soyad, ",", maas+" tl")
+else:
+    maas = maas + cocuk * 200
+    maas = str(maas)
+    print(isim, ",", soyad, ",", maas+" tl")
+ 
+###################################################################
+
+#55 ile 70 arasındaki sayıları gösterin
+ 
+sayi = 55
+while sayi<=70:
+     print(sayi)
+     sayi+=1
+
+###################################################################
+
+#55 ile 70 arasındaki 3 e bölünebilen sayıları gösterin
+
+i=55
+while i<=70:
+    if i%3==0:
+       print(i)
+    i+=1
+
+###################################################################
+
+#7 ile 77 arasındaki sayıların toplamı
+
+t=0
+i=7
+while i<77:
+   t += i
+   i += 1
+print(t)
+
+###################################################################
+
+#girilen sayıya kadar ki sayıların karelerini alıp topla
+
+t= 0
+a=1
+s = int(input("Sayı Giriniz: "))
+while a<=s:
+    t += a**2
+    a +=1
+print(t)
+###################################################################
+
+#Başlangıç ve bitiş değerleri kullanıcıdan alınan döngüyü
+#başlangıç ve bitiş arasındaki sayıların toplamını hesaplayacak döndürün.
+#DİKKAT:Kullanıcı yanlışlıkla bitiş değerini başlangıçtan küçük girebilir.
+
+t = 0
+x = int(input("Başlangıç Değeri: "))
+y = int(input("Bitiş Değeri: "))
+if y>x:
+    x,y=y,x
+while y<=x:
+    t += y
+    y +=1
+print(t)
+
+###################################################################
+
+#Klavyeden girilen değer 'cık' ise döngüden çıksın.
+# Değilse girilen sayıları toplayıp cıkılınca ekrana yazdırsın.
+
+t=0
+while True:
+    c= input("Sayı Giriniz:")
+    if c=="cık":
+        break
+    else:
+        c=int(c)
+        t+=c
+print(t)
+###################################################################
+
+#Faktöriyel Hesaplama
+
+f=int(input("Faktöriyel Hesaplama: "))
+c=1
+s=1
+while c<=f:
+    s = s*c
+    c +=1
+print(s)
+
+###################################################################
+
+#Kullanıcının girdiği sayıya kadar ki tüm çift sayıların toplamı
+
+t=0
+s=0
+k=int(input("Sayı Girin: "))
+if k%2==0:
+    while s<=k:
+        t+=s
+        s+= 2
+print(t)
+
+###################################################################
+
+#1 den 12'ye kadar ki sınıfları alt alta yazdırın
+
+a = 1
+while a<=12:
+    print(a,". Sınıf")
+    a+=1
+    
+###################################################################
+
+#3 yazılana kadar kullanıcıdan sayı isteyin ve 3 yazınca döngüden çıktı diyin
+
+s=3
+while True:
+    f=int(input("Sayı Giriniz: "))
+    if f==s:
+        break
+print("Döngüden Çıkıldı")
+
+###################################################################
+
+#kullanıcıdan 8 haneli şifre isteyin. Eksik ya da fazla olması durumunda tekrar giriniz diyin
+
+while True:
+    k = input("Şifre Giriniz")
+    if len(k)==8:
+        print("Şifre Doğrulandı")
+        break
+    print("Tekrar Giriniz")
+    
