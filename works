@@ -1,4 +1,5 @@
 
+########################### IF / ELSE ########################################
 
 #Kullanıcı iki adet fiyat girecek. 
 #Büyük girdiği fiyata %25 indirim uygulanıp toplanacak 
@@ -43,7 +44,7 @@ else:
     maas = str(maas)
     print(isim, ",", soyad, ",", maas+" tl")
  
-###################################################################
+############################## WHİLE #####################################
 
 #55 ile 70 arasındaki sayıları gösterin
  
@@ -170,3 +171,137 @@ while True:
         break
     print("Tekrar Giriniz")
     
+########################### FOR ########################################
+
+#1 ile 40 arasındaki sayıların toplamı
+
+# t=0
+# for i in range(1,41):
+#     t+=i
+# print(t)
+
+###################################################################
+
+#20 ile 40 arasındaki çift sayılar
+
+# for i in range(20,41):
+#      if i%2==0:
+#          print(i)
+
+#2.yol
+
+# for i in range(20,41,2):
+#     print(i)
+
+###################################################################
+
+#Kullanıcıdan başlangıç bitiş ve artış değerleri alınıp yazdırılacak kod.
+
+# x= int(input("Başlangıç:"))
+# y= int(input("Bitiş:"))
+# a= int(input("Artış:"))
+# if y<x:
+#     (y,x) = (x,y)
+#     for i in range(x,y,a):
+#         print(i)
+# else:
+#     for i in range(x,y,a):
+#         print(i)
+
+###################################################################
+
+#Kullanıcının girdiği sayının rakamlarını toplayan kod
+
+# s = input("Bir sayı giriniz: ")
+# t = 0
+# for i in s:
+#     i=int(i)
+#     t += i
+# print(t)
+
+###################################################################
+
+"""
+*
+**
+***
+****
+*****
+çıktısı bu desen olacak kod
+"""
+
+# for i in range(1,6):
+#     print("*"*i)
+
+###################################################################
+
+"""
+**********
+*        *
+*        *
+*        *
+**********
+çıktısı bu desen olacak kod
+"""
+#for i in range(1,6):
+#   if i==1 or i==5:
+#       print("*"*10)
+#   else:
+#       print("*"," "*8,"*",sep="")
+
+###################################################################
+
+#çarpım tablosu
+
+# for i in range(1,10):
+#     for j in range(1,10):
+#         print(i,"x",j,"=",i*j)
+#         if j==9:
+#             print("\n")
+
+########################### LIST ########################################
+
+#1 den 5 e kadar ki sayıların listeye eklenip ortalaması alınan kod
+
+# list=[]
+# for i in range(1,6):
+#        list.append(i)
+# print(sum(list)/len(list))
+
+#kullanıcıdan alınan sayısının listede olup olmadığını gösteren kod
+
+# list=[4,2,6,5,8,7]
+#
+# for f in range(3):
+#     f=int(input("Sayı Giriniz: "))
+#     if f in list:
+#         print(f , "sayısı listede mevcut")
+#     else:
+#         print(f, "sayısı listede mevcut değil")
+
+#kullanıcıdan 3 sayı alıp liste oluşturun ve listede sayıyı aratın. sayı varsa listede var yoksa listede yok
+
+# list=[]
+#
+# for i in range(3):
+#     f=int(input("Sayı Giriniz: "))
+#     list.append(f)
+#
+# k=int(input("Listede Ara: "))
+# if k in list:
+#     print(k, "listede var")
+# else:
+#     print(k, "listede yok")
+
+###################################################################
+
+#listeye 10 tane 1-50 arası rastgele sayı verdirin
+
+#import random
+
+# list=[]
+#
+# for i in range(1,11):
+#     sayi=random.randint(1,50)
+#     list.append(sayi)
+# print(list)
