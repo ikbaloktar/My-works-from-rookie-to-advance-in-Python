@@ -268,6 +268,8 @@ while True:
 #        list.append(i)
 # print(sum(list)/len(list))
 
+###################################################################
+
 #kullanıcıdan alınan sayısının listede olup olmadığını gösteren kod
 
 # list=[4,2,6,5,8,7]
@@ -278,6 +280,8 @@ while True:
 #         print(f , "sayısı listede mevcut")
 #     else:
 #         print(f, "sayısı listede mevcut değil")
+
+###################################################################
 
 #kullanıcıdan 3 sayı alıp liste oluşturun ve listede sayıyı aratın. sayı varsa listede var yoksa listede yok
 
@@ -305,3 +309,30 @@ while True:
 #     sayi=random.randint(1,50)
 #     list.append(sayi)
 # print(list)
+
+###################################################################
+
+#kullanıcının girdiği 2 sayı arasındaki sayıların toplamını bulan Python For Döngüsü Örneği:
+
+#f= int(input("Sayı Giriniz:" ))
+#k= int(input("Sayı Giriniz:" ))
+#t=0
+#for i in range(f,k):
+#    t+=i
+#print(t)
+
+###################################################################
+
+#asal sayı kontrol programı
+
+#f=int(input("Sayı: "))
+#if f>1:
+#    for i in range(2,f):
+#        if f%i==0:
+#            print(f, "asal değildir")
+#            break
+#        else:
+#            print(f, "asaldır")
+#            break
+#else:
+#    print("Sayı asal değildir")
