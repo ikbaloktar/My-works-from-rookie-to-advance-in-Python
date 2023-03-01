@@ -383,3 +383,68 @@ while True:
 # s["Yaş"]=yas
 #
 # print(s)
+
+############################### FUNCTIONS ####################################
+
+
+
+# def Metod(a,b,c):
+#     if c=="*":
+#         print(a*b)
+#     elif c=="+":
+#         print(a+b)
+#     elif c== "-":
+#         print(a-b)
+#     elif c=="/":
+#         print(a/b)
+#     else:
+#         print("Geçersiz İşlem")
+#
+# s1=int(input("Sayı Giriniz: "))
+# s2=int(input("Sayı Giriniz: "))
+# s3=(input("Yapmak İstediğiniz İşlemi Giriniz(+,-,*,/): "))
+# Metod(s1,s2,s3)
+
+###################################################################
+
+# def Metod(a,b):
+#     for i in range(b):
+#         print(a)
+#
+# Metod("ikbal",5)
+
+###################################################################
+
+# l=[]
+# def Metod(a):
+#    for i in range(a):
+#        i=input(f"{i+1}.İsim Giriniz: ")
+#        l.append(i)
+#    print(l)
+#
+#
+# Metod(5)
+
+###################################################################
+
+# def Metod(a):
+#     if a%2==1:
+#         print(a , "sayısı tektir")
+#     else:
+#         print(a, "sayısı çifttir")
+#
+# f=int(input("Sayı Giriniz: "))
+# Metod(f)
+
+###################################################################
+
+# def Metod(en,boy,sekil):
+#     for i in range(boy):
+#         print(sekil*en)
+#
+# e=int(input("En Giriniz: "))
+# b=int(input("Boy Giriniz: "))
+# f=input("Şekli Giriniz:")
+# Metod(e,b,f)
+
+###################################################################
