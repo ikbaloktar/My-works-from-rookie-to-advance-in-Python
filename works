@@ -386,7 +386,7 @@ while True:
 
 ############################### FUNCTIONS ####################################
 
-
+# 2 sayı ve yapmak istediğiniz işlemi seçtiren mini hesap makinesi kodu
 
 # def Metod(a,b,c):
 #     if c=="*":
@@ -407,6 +407,8 @@ while True:
 
 ###################################################################
 
+#kelime ve o kelimeyi kaç defa yazdırmak istediğinizi yazdıran kod
+
 # def Metod(a,b):
 #     for i in range(b):
 #         print(a)
@@ -414,6 +416,8 @@ while True:
 # Metod("ikbal",5)
 
 ###################################################################
+
+#5 tane isim girin ve listye atın
 
 # l=[]
 # def Metod(a):
@@ -427,6 +431,8 @@ while True:
 
 ###################################################################
 
+#Metod ile teklik çiftlik kontrolü
+
 # def Metod(a):
 #     if a%2==1:
 #         print(a , "sayısı tektir")
@@ -438,6 +444,8 @@ while True:
 
 ###################################################################
 
+#şekil çizin(dikdörtgen,kare)
+
 # def Metod(en,boy,sekil):
 #     for i in range(boy):
 #         print(sekil*en)
@@ -446,5 +454,42 @@ while True:
 # b=int(input("Boy Giriniz: "))
 # f=input("Şekli Giriniz:")
 # Metod(e,b,f)
+
+###################################################################
+
+#listedeki sayıların aritmetik ortalamasını döndürün
+
+# def Metod(list):
+#     t=0
+#     for i in list:
+#         t+=i
+#     return t/len(list)
+# l=[4,5,6,7,8]
+# print(Metod(l))
+
+###################################################################
+
+#2 sayı girilecek ve büyüğü yazdırılacak
+
+# def Metod(a,b):
+#     if a>b:
+#         return(a)
+#     else:
+#         return(b)
+# f=int(input("Sayı Giriniz:"))
+# k=int(input("Sayı Giriniz:"))
+# print((Metod(f,k)))
+
+###################################################################
+
+#sansür kodu yazın
+
+# def Metod(cumle,yk,yeni):
+#     if yk in cumle:
+#         return cumle.replace(yk,yeni)
+#     else:
+#         return cumle
+#
+# print(Metod("Merhaba Dünya","Merhaba","Selam"))
 
 ###################################################################
